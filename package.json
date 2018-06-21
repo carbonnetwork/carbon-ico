@@ -1,0 +1,26 @@
+{
+  "name": "carbon-ico",
+  "version": "0.0.1",
+  "description": "The project is in progress.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carbonnetwork/carbon-ico.git"
+  },
+  "keywords": [
+    "carbon",
+    "ico"
+  ],
+  "author": "carbonnetwork.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carbonnetwork/carbon-ico/issues"
+  },
+  "homepage": "https://github.com/carbonnetwork/carbon-ico#readme"
+}

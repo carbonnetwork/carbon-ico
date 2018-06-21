@@ -18,9 +18,8 @@ contract CarbonToken is StandardToken, Ownable {
     string public constant symbol = "CBT";
     uint8 public constant decimals = 18;  // 18 is the most common number of decimal places
 
-    uint256 _totalSupply = 1000000 * 10**uint256(decimals);
-	
 	constructor() public {
+		_totalSupply = 1000000 * 10**uint256(decimals);
         balances[owner] = _totalSupply;
         emit Transfer(address(0), owner, _totalSupply);
 	}
