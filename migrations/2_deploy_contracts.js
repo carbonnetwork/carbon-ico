@@ -8,7 +8,7 @@ var CarbonTokenMock = artifacts.require("./test/CarbonTokenMock.sol");
 module.exports = function(deployer) {
   deployer.deploy(SafeMathLib);
   deployer.deploy(Ownable);
-  //deployer.deploy(ERC20);
+  //deployer.deploy(ERC20); //abstract contract or interface has no bytecode, don't need deploy.
   deployer.link(SafeMathLib, [StandardToken,CarbonToken]);
   deployer.deploy(StandardToken);
   deployer.deploy(CarbonToken).then(function(){

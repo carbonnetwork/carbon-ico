@@ -16,6 +16,9 @@ contract StandardToken is ERC20 {
 
 	mapping (address => mapping (address => uint)) allowed;
 
+	//constructor() public {}
+	
+
 	/*
 	 *fix short address bug
 	 */

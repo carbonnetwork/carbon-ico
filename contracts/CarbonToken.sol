@@ -1,6 +1,6 @@
 pragma solidity ^0.4.23;
 /**
- * The CarbonToken contract does this and that...
+ * 
  */
 
 import "./StandardToken.sol";
@@ -16,7 +16,7 @@ contract CarbonToken is StandardToken, Ownable {
 
 	string public constant name = "CarbonToken";
     string public constant symbol = "CBT";
-    uint8 public constant decimals = 18;  // 18 is the most common number of decimal places
+    uint8 public constant decimals = 18;  
 
 	constructor() public {
 		_totalSupply = 1000000 * 10**uint256(decimals);
