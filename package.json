@@ -1,6 +1,6 @@
 {
   "name": "carbon-ico",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "The project is in progress.",
   "main": "truffle-config.js",
   "directories": {
