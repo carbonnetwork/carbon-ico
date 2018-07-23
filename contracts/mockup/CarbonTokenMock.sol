@@ -9,6 +9,7 @@ import "../CarbonToken.sol";
  */
 contract CarbonTokenMock {
 	function transferMock (address tokenAddress, address _to, uint _amout) public {
+		/*
 		uint r;
 		bytes4 sig = bytes4(keccak256("transfer(address,uint256)"));
 
@@ -22,10 +23,10 @@ contract CarbonTokenMock {
 	    if(r != 1){
 	    	revert();
 	    }
-
-	    /*
-		bool res = tokenAddress.delegatecall(bytes4(keccak256("transfer(address,uint256)")),_to, _amout);
+	    */
+	    
+		bool res = tokenAddress.call(bytes4(keccak256("transfer(address,uint256)")),_to, _amout);
 		assert (res);
-		*/
+		
 	}
 }

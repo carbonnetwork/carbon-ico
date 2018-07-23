@@ -9,17 +9,17 @@ import "../contracts/CarbonToken.sol";
  * The TestCarbonToken contract does this and that...
  */
 contract TestCarbonToken {
-	CarbonToken carbon;
+	
+	/*function testTransfer() public {
+		address carbonAddress = DeployedAddresses.CarbonToken();
+		CarbonToken carbon = CarbonToken(carbonAddress);
 
-	//has some problerm, commet the code
-	/*
-	function beforeAll() public {
-		carbon = CarbonToken(DeployedAddresses.CarbonToken());
-	}
+		address x = 0xdcA67974edD72857Cd36b08D8Df27D2a439661e9;
+		bool flag = carbonAddress.call(bytes4(keccak256("transfer(address, uint256)")), x, 1000);
+		if(!flag){
+			revert();
+		}
 
-	function testTransfer() public {
-		address x = 0xEcEa549d1fbe9025dc09d6CCB66b498a03372B68;
-		carbon.transfer(x, 1000);
 		Assert.equal(carbon.balanceOf(x), 1000, "The balance is wrong!");
 	}*/
 }

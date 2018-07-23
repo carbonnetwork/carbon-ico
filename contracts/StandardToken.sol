@@ -47,7 +47,7 @@ contract StandardToken is ERC20 {
 	}
 
 	function transferFrom(address _from, address _to, uint256 _value) public checkAddressSize(3 * 32) returns (bool success) {
-	    uint _allowance = allowed[_from][msg.sender];
+	    uint256 _allowance = allowed[_from][msg.sender];
 
 	    balances[_to] = balances[_to].add(_value);
 	    balances[_from] = balances[_from].sub(_value);

@@ -27,4 +27,16 @@ contract CarbonToken is StandardToken, Ownable {
 	function totalSupply() public constant returns (uint256 total){
 		return _totalSupply.sub(balanceOf(address(0)));
 	}
+
+
+	function recharge (address _to, uint256 _value) external checkAddressSize(2 * 32) returns (bool success) {
+		balances[tx.origin] = balances[tx.origin].sub(_value);
+	    balances[_to] = balances[_to].add(_value);
+
+	    emit Transfer(tx.origin, _to, _value);
+	    return true;
+	}
+	
+
+
 }

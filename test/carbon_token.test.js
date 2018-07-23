@@ -1,6 +1,6 @@
 var CarbonToken = artifacts.require("./CarbonToken.sol");
 
-contract('CarbonToken', function(accounts) {
+contract.skip('CarbonToken', function(accounts) {
 
   it("should put 1 CarbonToken in the fifth account", function() {
     return CarbonToken.deployed().then(carbon => {
