@@ -36,7 +36,5 @@ contract CarbonToken is StandardToken, Ownable {
 	    emit Transfer(tx.origin, _to, _value);
 	    return true;
 	}
-	
-
 
 }
