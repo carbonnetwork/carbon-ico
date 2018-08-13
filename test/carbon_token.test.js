@@ -3,7 +3,7 @@ var CarbonToken = artifacts.require("CarbonToken");
 const Web3 = require('web3');
 var web3 = new Web3();
 
-var carbonAddress = '0x94e1529a98c18e65a235f3a442aad9176788f5c1';
+var carbonAddress = '0x808e5ccf00d12e7f13c845da0fb7dd0b8855646a';
 
 contract('CarbonToken', function(accounts) {
 
